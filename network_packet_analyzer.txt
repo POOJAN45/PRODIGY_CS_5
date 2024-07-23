@@ -1,0 +1,322 @@
+TCP Source Port: 53070 -> TCP Destination Port: 443
+TCP Source Port: 443 -> TCP Destination Port: 53070
+IP Source: 192.168.1.7 -> IP Destination: 140.82.114.25
+TCP Source Port: 52945 -> TCP Destination Port: 443
+IP Source: 140.82.114.25 -> IP Destination: 192.168.1.7
+TCP Source Port: 443 -> TCP Destination Port: 52945
+TCP Source Port: 53059 -> TCP Destination Port: 443
+TCP Source Port: 443 -> TCP Destination Port: 53059
+IP Source: 192.168.1.7 -> IP Destination: 140.82.114.22
+TCP Source Port: 53235 -> TCP Destination Port: 443
+IP Source: 192.168.1.7 -> IP Destination: 140.82.114.22
+TCP Source Port: 53236 -> TCP Destination Port: 443
+IP Source: 140.82.114.22 -> IP Destination: 192.168.1.7
+TCP Source Port: 443 -> TCP Destination Port: 53235
+IP Source: 192.168.1.7 -> IP Destination: 140.82.114.22
+TCP Source Port: 53235 -> TCP Destination Port: 443
+###[ Ethernet ]### 
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 726359
+     plen      = 21
+     nh        = TCP
+     hlim      = 64
+     src       = 2401:4900:8899:2b88:64f3:a0ce:897a:de24
+     dst       = 2404:6800:4003:c03::bc
+###[ TCP ]### 
+        sport     = 53070
+        dport     = https
+        seq       = 2054367506
+        ack       = 2168792096
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 510
+        chksum    = 0x6766
+        urgptr    = 0
+        options   = []
+###[ Raw ]###
+           load      = '\x00'
+
+None
+###[ Ethernet ]###
+  dst       = c0:3c:59:3f:2d:a7
+  src       = 60:bd:2c:ac:3f:90
+  type      = IPv6
+###[ IPv6 ]###
+     version   = 6
+     tc        = 128
+     fl        = 167640
+     plen      = 32
+     nh        = TCP
+     hlim      = 123
+     src       = 2404:6800:4003:c03::bc
+     dst       = 2401:4900:8899:2b88:64f3:a0ce:897a:de24
+###[ TCP ]###
+        sport     = https
+        dport     = 53070
+        seq       = 2168792096
+        ack       = 2054367507
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 290
+        chksum    = 0xb04e
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('SAck', (2054367506, 2054367507))]
+
+None
+###[ Ethernet ]###
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 41
+     id        = 39867
+     flags     = DF
+     frag      = 0
+     ttl       = 128
+     proto     = tcp
+     chksum    = 0x0
+     src       = 192.168.1.7
+     dst       = 140.82.114.25
+     \options   \
+###[ TCP ]###
+        sport     = 52945
+        dport     = https
+        seq       = 2040505877
+        ack       = 2171593868
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 512
+        chksum    = 0xc036
+        urgptr    = 0
+        options   = []
+###[ Raw ]###
+           load      = '\x00'
+
+None
+###[ Ethernet ]###
+  dst       = c0:3c:59:3f:2d:a7
+  src       = 60:bd:2c:ac:3f:90
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 56873
+     flags     = DF
+     frag      = 0
+     ttl       = 47
+     proto     = tcp
+     chksum    = 0xad7f
+     src       = 140.82.114.25
+     dst       = 192.168.1.7
+     \options   \
+###[ TCP ]###
+        sport     = https
+        dport     = 52945
+        seq       = 2171593868
+        ack       = 2040505878
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 76
+        chksum    = 0x23ac
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('SAck', (2040505877, 2040505878))]
+
+None
+###[ Ethernet ]###
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv6
+###[ IPv6 ]###
+     version   = 6
+     tc        = 0
+     fl        = 517962
+     plen      = 21
+     nh        = TCP
+     hlim      = 64
+     src       = 2401:4900:8899:2b88:64f3:a0ce:897a:de24
+     dst       = 2603:1040:a06:6::
+###[ TCP ]###
+        sport     = 53059
+        dport     = https
+        seq       = 1968026063
+        ack       = 264153302
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 510
+        chksum    = 0xceee
+        urgptr    = 0
+        options   = []
+###[ Raw ]###
+           load      = '\x00'
+
+None
+###[ Ethernet ]### 
+  dst       = c0:3c:59:3f:2d:a7
+  src       = 60:bd:2c:ac:3f:90
+  type      = IPv6
+###[ IPv6 ]###
+     version   = 6
+     tc        = 0
+     fl        = 505672
+     plen      = 32
+     nh        = TCP
+     hlim      = 118
+     src       = 2603:1040:a06:6::
+     dst       = 2401:4900:8899:2b88:64f3:a0ce:897a:de24
+###[ TCP ]###
+        sport     = https
+        dport     = 53059
+        seq       = 264153302
+        ack       = 1968026064
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 7705
+        chksum    = 0x8de4
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('SAck', (1968026063, 1968026064))]
+
+None
+###[ Ethernet ]###
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 48049
+     flags     = DF
+     frag      = 0
+     ttl       = 128
+     proto     = tcp
+     chksum    = 0x0
+     src       = 192.168.1.7
+     dst       = 140.82.114.22
+     \options   \
+###[ TCP ]###
+        sport     = 53235
+        dport     = https
+        seq       = 1602642286
+        ack       = 0
+        dataofs   = 8
+        reserved  = 0
+        flags     = S
+        window    = 64240
+        chksum    = 0xc03e
+        urgptr    = 0
+        options   = [('MSS', 1460), ('NOP', None), ('WScale', 8), ('NOP', None), ('NOP', None), ('SAckOK', b'')]
+
+None
+###[ Ethernet ]###
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 48050
+     flags     = DF
+     frag      = 0
+     ttl       = 128
+     proto     = tcp
+     chksum    = 0x0
+     src       = 192.168.1.7
+     dst       = 140.82.114.22
+     \options   \
+###[ TCP ]###
+        sport     = 53236
+        dport     = https
+        seq       = 3530982424
+        ack       = 0
+        dataofs   = 8
+        reserved  = 0
+        flags     = S
+        window    = 64240
+        chksum    = 0xc03e
+        urgptr    = 0
+        options   = [('MSS', 1460), ('NOP', None), ('WScale', 8), ('NOP', None), ('NOP', None), ('SAckOK', b'')]
+
+None
+###[ Ethernet ]###
+  dst       = c0:3c:59:3f:2d:a7
+  src       = 60:bd:2c:ac:3f:90
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 44
+     proto     = tcp
+     chksum    = 0x8eac
+     src       = 140.82.114.22
+     dst       = 192.168.1.7
+     \options   \
+###[ TCP ]###
+        sport     = https
+        dport     = 53235
+        seq       = 1604164197
+        ack       = 1602642287
+        dataofs   = 8
+        reserved  = 0
+        flags     = SA
+        window    = 65535
+        chksum    = 0x226f
+        urgptr    = 0
+        options   = [('MSS', 1412), ('NOP', None), ('NOP', None), ('SAckOK', b''), ('NOP', None), ('WScale', 10)]
+
+None
+###[ Ethernet ]###
+  dst       = 60:bd:2c:ac:3f:90
+  src       = c0:3c:59:3f:2d:a7
+  type      = IPv4
+###[ IP ]###
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 48051
+     flags     = DF
+     frag      = 0
+     ttl       = 128
+     proto     = tcp
+     chksum    = 0x0
+     src       = 192.168.1.7
+     dst       = 140.82.114.22
+     \options   \
+###[ TCP ]###
+        sport     = 53235
+        dport     = https
+        seq       = 1602642287
+        ack       = 1604164198
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 512
+        chksum    = 0xc032
+        urgptr    = 0
+        options   = ''
+
+None
